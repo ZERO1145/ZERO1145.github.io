@@ -1,0 +1,194 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>关于森林卡无限木头的bug | 肖凯尔特`s blog</title>
+<link rel="shortcut icon" href="https://ZERO1145.github.io/favicon.ico?v=1672726888211">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://ZERO1145.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="关于森林卡无限木头的bug | 肖凯尔特`s blog - Atom Feed" href="https://ZERO1145.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="需要以下准备事项
+一,必须处于多人模式并且玩家数至少有三个。
+二，需要有木雪橇和至少7个木头.
+步骤：
+1.让一位玩家握住木雪橇，并且保持静止.
+2.先将三个木头放置木雪橇中.
+3.让另外两个玩家拿起两个木头，连续执行放入和取出动作.
+4...." />
+    <meta name="keywords" content="教程" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://ZERO1145.github.io">
+  <img class="avatar" src="https://ZERO1145.github.io/images/avatar.png?v=1672726888211" alt="">
+  </a>
+  <h1 class="site-title">
+    肖凯尔特`s blog
+  </h1>
+  <p class="site-description">
+    新年快乐。
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="https://zero1145.github.io/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="https://zero1145.github.io/tag/uJMkazlGV/" class="menu" target="_blank">
+          小说
+        </a>
+      
+    
+      
+        <a href="https://zero1145.github.io/tag/JTllU__2V/" class="menu">
+          日记与碎碎念
+        </a>
+      
+    
+      
+        <a href="https://ZERO1145.github.io/tag/FnwMYu2kh" class="menu">
+          教程
+        </a>
+      
+    
+      
+        <a href="https://ZERO1145.github.io/post/te-bie-ming-xie" class="menu">
+          特别鸣谢
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+        <a href="https://twitter.com/ZERO_XKRT" target="_blank">
+          <i class="ri-twitter-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              关于森林卡无限木头的bug
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-12-25
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://ZERO1145.github.io/tag/FnwMYu2kh/" class="post-tag">
+                  # 教程
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>需要以下准备事项<br>
+一,必须处于多人模式并且玩家数至少有三个。<br>
+二，需要有木雪橇和至少7个木头.<br>
+步骤：<br>
+1.让一位玩家握住木雪橇，并且保持静止.<br>
+2.先将三个木头放置木雪橇中.<br>
+3.让另外两个玩家拿起两个木头，连续执行放入和取出动作.<br>
+4.当木头凭空出现，即代表bug成功生效.<br>
+注意！此bug会破坏游戏平衡性！请谨慎使用！</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://ZERO1145.github.io/post/cheng-li-ren-yu-xiang-li-ren/">
+              <h3 class="post-title">
+                城里人与乡里人
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://ZERO1145.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
